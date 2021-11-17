@@ -9,8 +9,8 @@ import org.openqa.selenium.support.PageFactory;
  * @author Prashanth KB
  *
  */
-public class Registerpage {
-	public Registerpage(WebDriver driver) {
+public class RegisterPage {
+	public RegisterPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	

@@ -42,7 +42,7 @@ public class Excelutil {
 		 * @throws IOException
 		 */
 		public static boolean readbooleanvaluefromexcel(String sheetname,int rowno,int cellno) throws EncryptedDocumentException, IOException {
-			File abspath=new File("./resources/testdata.xlsx");
+			File abspath=new File("./src/test/resources/testdata.xlsx");
 			FileInputStream fis=new FileInputStream(abspath);
 			Workbook workbook = WorkbookFactory.create(fis);
 			boolean data = workbook.getSheet(sheetname).getRow(rowno).getCell(cellno).getBooleanCellValue();
@@ -59,7 +59,7 @@ public class Excelutil {
 		 * @throws IOException
 		 */
 		public static  LocalDateTime readdatevalueformexcel(String sheetname,int rowno,int cellno) throws EncryptedDocumentException, IOException {
-			File abspath=new File("./resources/testdata.xlsx");
+			File abspath=new File("./src/test/resources/testdata.xlsx");
 			FileInputStream fis=new FileInputStream(abspath);
 			Workbook workbook = WorkbookFactory.create(fis);
 			 LocalDateTime data = workbook.getSheet(sheetname).getRow(rowno).getCell(cellno).getLocalDateTimeCellValue();
@@ -75,7 +75,7 @@ public class Excelutil {
 		 * @throws IOException
 		 */
 		public static double readnumericvaluefromexcel(String sheetname,int rowno,int cellno) throws EncryptedDocumentException, IOException {
-			File abspath=new File("./resources/testdata.xlsx");
+			File abspath=new File("./src/test/resources/testdata.xlsx");
 			FileInputStream fis=new FileInputStream(abspath);
 			Workbook workbook = WorkbookFactory.create(fis);
 			double data = workbook.getSheet(sheetname).getRow(rowno).getCell(cellno).getNumericCellValue();

@@ -14,7 +14,7 @@ import org.testng.ITestResult;
  * @author Prashanth KB
  *
  */
-public class ListnerImplementation implements  ITestListener{
+public class ITestListnerImplementation implements  ITestListener{
 
 	public void onTestStart(ITestResult result) {  
 		// TODO Auto-generated method stub  
